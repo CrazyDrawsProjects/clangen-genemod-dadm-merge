@@ -408,7 +408,7 @@ class SettingsScreen(Screens):
             for cat in Cat.all_cats_list:
                 cat.pelt.rebuild_sprite = True
     
-        def open_triggers_settings(self):
+    def open_triggers_settings(self):
         """Opens and draws trigger_settings"""
         self.enable_all_menu_buttons()
         self.triggers_settings_button.disable()
@@ -420,7 +420,8 @@ class SettingsScreen(Screens):
             ui_scale(pygame.Rect((0, 440), (1400, 600))),
             allow_scroll_x=False,
             allow_scroll_y=True,
-            manager=MANAGER)
+            manager=MANAGER
+        )
 
         for i, (code, desc) in enumerate(settings_dict["triggers"].items()):
             self.checkboxes_text[code] = pygame_gui.elements.UITextBox(
