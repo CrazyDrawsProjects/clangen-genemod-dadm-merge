@@ -262,7 +262,7 @@ class SettingsScreen(Screens):
         self.triggers_settings_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((0, 100), (150, 30))),
             "screens.settings.triggers",
-            get_button_dict(ButtonStyles.MENU_LEFT, (150, 30)),
+            get_button_dict(ButtonStyles.MENU_MIDDLE, (150, 30)),
             object_id="@buttonstyles_menu_middle",
             manager=MANAGER,
             anchors={"left_target": self.general_settings_button},
@@ -496,7 +496,7 @@ class SettingsScreen(Screens):
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER,
         )
-        
+
         self.refresh_checkboxes()
 
     def open_audio_settings(self):
