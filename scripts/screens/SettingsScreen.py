@@ -172,8 +172,8 @@ class SettingsScreen(Screens):
             elif event.ui_element == self.general_settings_button:
                 self.open_general_settings()
                 return
-            elif event.ui_element == self.trigger_settings_button:
-                self.open_trigger_settings()
+            elif event.ui_element == self.triggers_settings_button:
+                self.open_triggers_settings()
                 return
             elif event.ui_element == self.audio_settings_button:
                 self.open_audio_settings()
