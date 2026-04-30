@@ -9,6 +9,7 @@
 
 [game]
     [game.general]
+        "warriorified names" = true
         "dark mode" = false
         "flip camp mode" = false
         "fullscreen scaling" = false
@@ -35,6 +36,17 @@
         "no suffixes" = false
         "no special suffixes" = false
         "outsider names" = false
+
+    [game.triggers]
+        allow_triggers = false
+        misdiagnosis = false
+        iatrogenic_disorders = false
+        eating_disorders = false
+        self_harm = false
+        suicidal_ideation = false
+        psychosis = false
+        dissociation = false
+        intrusive_thoughts = false
 
     [game.other]
         language = [
@@ -90,8 +102,10 @@
         leader_retirement = false
         healer_retirement = false
         mediator_retirement = false
+        higher_disabled_med_rates = false
         become_mediator = false
         become_healer = false
+        "plural names" = true
         "random med cat" = true
         patrol_lock_meds = false
         allow_mediator_patrols = false
@@ -109,8 +123,10 @@
         "only clan surrogates" = false
         "only outside surrogates" = false
         multisire = false
+        "pregnancy turmoil" = false
         "romantic with former mentor" = true
         "first cousin mates" = false
+        "second cousin mates" = false
         no_litters = false
     
     [clan.freshkill_tactics]
